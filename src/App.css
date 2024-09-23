@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.board{
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board h1{
+  margin-bottom: 12px;
+}
+
+.board .game{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.turn{
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.is-selected{
+  background: rgb(0, 106, 192);
+}
+
+.square{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 60px;
+}
+
+.win{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+button{
+  margin: 12px;
+}
+
+.winner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(17, 17, 17);
+  width: 400px;
+  padding: 12px;
+  border-radius: 12px;
+}
